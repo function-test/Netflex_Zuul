@@ -1,0 +1,16 @@
+server:
+  port: 9000
+
+zuul:
+  routes:
+    pims:
+      path: /naver/**
+      url: https://www.naver.com
+      stripPrefix: true
+    lafs:
+      path: /google/**
+      url: https://www.google.com
+      stripPrefix: true
+      
+      
+      
